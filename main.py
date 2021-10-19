@@ -51,6 +51,16 @@ def delete(id):
     except:
         return 'There was a problem deleting that task'
 
+#create a route that deletes all tasks
+@app.route('/delete_all_tasks')
+def delete_all():
+    try:
+        db.session.query(Todo_List).delete() #delete all the tasks from the database
+        db.session.commit() #commit the changes to the database
+        return redirect('/') #redirect the user to the root of the site
+    except:
+        return 'There was a problem deleting all tasks'
+
 #create a route for editing tasks
 @app.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit(id):

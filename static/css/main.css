@@ -40,3 +40,24 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
 }
+
+.button {
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+    height: auto;
+    background: #b6c4ca;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.delete_all{
+    
+    /* margin at the bottom of the item */
+    margin-bottom: 15px;
+}

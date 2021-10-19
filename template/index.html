@@ -12,6 +12,11 @@
 	{% if tasks|length > 0 %}
 
 	<h4>Tasks TODO</h4>
+	<!-- create a delete all button -->
+	<div class="delete_all">
+		<a href="/delete_all_tasks" class="button" >Delete All Tasks</a>
+	</div>
+	
 	<table>
 		<tr>
 			<th>Task</th>
@@ -45,7 +50,7 @@
 	<form action="/" method="post">
 		<input type="text" name="Task_content" id="contents" />
 		<br>
-		<input class="form" type="submit" value="Add Tasks" />
+		<input class="button" type="submit" value="Add Tasks" />
 	</form>
 </div>
 
