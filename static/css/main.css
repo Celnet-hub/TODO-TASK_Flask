@@ -1,0 +1,24 @@
+body{
+    background-color: #967474;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+table{
+    width: 100%;
+}
+
+h4{
+    text-align: center;
+    /* bolded underline */
+    text-decoration: underline overline #000000 solid 5px;
+}
+
+form{
+    text-align: center;
+    /* set width */
+}

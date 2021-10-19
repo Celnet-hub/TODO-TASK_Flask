@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+<!-- head -->
+{% block head %}
+<title>Flask Project 1</title>
+{% endblock %}
+
+<!-- body -->
+{% block body %}
+<h1>Hello from Flask server</h1>
+<div class="content">
+	<h4>Update Task</h4>
+
+<form action="/edit/{{task.id}}" method="post">
+	<input type="text" name="Task_content" id="contents" value="{{task.content}}" />
+	<input type="submit" value="Add Tasks" />
+</form>
+
+{%endblock%}

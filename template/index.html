@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+<!-- head -->
+{% block head %}
+<title>Flask Project 1</title>
+{% endblock %}
+
+<!-- body -->
+{% block body %}
+<h1>Hello from Flask server</h1>
+<div class="content">
+	<h4>Tasks TODO</h4>
+	<table>
+		<tr>
+			<th>Task</th>
+			<th>Date Added</th>
+			<th>Action</th>
+		</tr>
+		{% for task in tasks %}
+		<tr>
+			<td>{{task.content}}</td>
+			<td>{{task.date_created}}</td>
+			<td>
+				<a href="/delete/{{task.id}}">Delete</a>
+				<br />
+				<a href="/edit/{{task.id}}">Edit</a>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+</div>
+
+<form action="/" method="post">
+	<input type="text" name="Task_content" id="contents" />
+	<input type="submit" value="Add Tasks" />
+</form>
+
+{%endblock%}
