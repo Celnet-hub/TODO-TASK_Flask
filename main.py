@@ -15,7 +15,7 @@ class Todo_List(db.Model):
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
     #create a __repr__ method to print the object's state when it is evaluated. __repr__ is a special method that returns a string representation of the object in a precised content. In this case, it returns the object's content. note that __str__ is a special method that returns a string representation of the object in human-readable form.
-    def __repr__(self):
+    def __str__(self):
         return '<Task %r>' % self.id
 
 # create a route for the root of the site

@@ -9,6 +9,8 @@
 {% block body %}
 <h1>Hello from Flask server</h1>
 <div class="content">
+	{% if tasks|length > 0 %}
+
 	<h4>Tasks TODO</h4>
 	<table>
 		<tr>
@@ -28,13 +30,18 @@
 		</tr>
 		{% endfor %}
 	</table>
+
+	{% else %}
+	<h3>You currently do not have a task to do. Kindly add take using the form below</h3>
+	{% endif %}
+	
 </div>
 
 <!-- Form for entries -->
-<div>
-	<h4>
+<div class="entries">
+	<!-- <h4>
 		Add a new task
-	</h4>
+	</h4> -->
 	<form action="/" method="post">
 		<input type="text" name="Task_content" id="contents" />
 		<br>

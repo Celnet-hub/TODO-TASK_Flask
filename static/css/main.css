@@ -16,10 +16,8 @@ table{
     width: 100%;
 }
 
-h4{
+h4,h3{
     text-align: center;
-    /* bolded underline */
-    text-decoration: underline overline #000000 solid 5px;
 }
 
 form{
@@ -29,6 +27,11 @@ form{
 
 .form{
     font-family: 'Courier New', Courier, monospace;
+}
+
+.entries{
+    /* add margin to the top */
+    margin-top: 30px;
 }
 
 /* increase the width of the input tag */
