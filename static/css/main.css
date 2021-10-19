@@ -57,7 +57,10 @@ input[type=text] {
 }
 
 .delete_all{
-    
-    /* margin at the bottom of the item */
     margin-bottom: 15px;
+}
+
+.cancel_update{
+    text-align: center;
+    margin-top: 15px;
 }

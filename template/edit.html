@@ -7,13 +7,15 @@
 
 <!-- body -->
 {% block body %}
-<h1>Hello from Flask server</h1>
+<h1>Hello from GuniCorn Server: Task TODO Table.</h1>
 <div class="content">
 	<h4>Update Task</h4>
 
 <form action="/edit/{{task.id}}" method="post">
 	<input type="text" name="Task_content" id="contents" value="{{task.content}}" />
-	<input type="submit" value="Add Tasks" />
+	<input type="submit" value="Add Tasks" class="button"/>
 </form>
-
+<div class="cancel_update">
+	<a href="/" class="button" >Cancel</a>
+</div>
 {%endblock%}
