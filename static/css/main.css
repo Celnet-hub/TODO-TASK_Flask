@@ -1,5 +1,9 @@
 body{
     background-color: #967474;
+    /* create a consolas font */
+    font-family: 'Consolas', monospace;
+    /* set the font size to 16px */
+    font-size: 16px;
 }
 
 table,
@@ -21,4 +25,15 @@ h4{
 form{
     text-align: center;
     /* set width */
+}
+
+.form{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* increase the width of the input tag */
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
 }
