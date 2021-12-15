@@ -68,3 +68,14 @@ input[type=text] {
 a{
     text-decoration: none;
 }
+
+.btn {
+    background-color: #b6c4ca;
+    color: white;
+    padding: 5px 10px;
+    border: olive;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}

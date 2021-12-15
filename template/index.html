@@ -14,9 +14,9 @@
 	<h4>Tasks TODO</h4>
 	<!-- create a delete all button -->
 	<div class="delete_all">
-		<a href="/delete_all_tasks" class="button" >Delete All Tasks</a>
+		<a href="/delete_all_tasks" class="button">Delete All Tasks</a>
 	</div>
-	
+
 	<table>
 		<tr>
 			<th>Task</th>
@@ -28,18 +28,19 @@
 			<td>{{task.content}}</td>
 			<td>{{task.date_created}}</td>
 			<td>
-				<a href="/delete/{{task.id}}">Delete</a>
-				<br />
-				<a href="/edit/{{task.id}}">Edit</a>
+				<a href="/delete/{{task.id}}"><button class="btn">Delete</button></a>
+				
+				<a href="/edit/{{task.id}}"><button class="btn">Edit</button></a>
 			</td>
 		</tr>
 		{% endfor %}
 	</table>
 
 	{% else %}
-	<h3>You currently do not have TASKS to do. Kindly add TASKS using the form below</h3>
+	<h3>
+		You currently do not have TASKS to do. Kindly add TASKS using the form below
+	</h3>
 	{% endif %}
-	
 </div>
 
 <!-- Form for entries -->
@@ -49,10 +50,9 @@
 	</h4> -->
 	<form action="/" method="post">
 		<input type="text" name="Task_content" id="contents" />
-		<br>
+		<br />
 		<input class="button" type="submit" value="Add Tasks" />
 	</form>
 </div>
-
 
 {%endblock%}
